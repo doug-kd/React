@@ -3,12 +3,11 @@ import React from 'react'
 const List = (props) => {
   const style = {
     complete: {
-      backgroundColor: 'green'
-    },
+      backgroundColor: 'green',
+      fontFamily: 'Roboto, sans-serif'
+  },
     incomplete: {
-      backgroundImage: 'url(https://media.giphy.com/media/h0TPbr80IwoP6/giphy.gif)',
-      backgroundSize: '100px',
-      backgroundRepeat: 'no-repeat'
+      backgroundColor: ''
     }
   };
 

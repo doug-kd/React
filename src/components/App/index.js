@@ -28,6 +28,15 @@ this.setState({term: event.target.value})
 }
 
 onSubmit = (event) => {
+fetch('/api/todos'),{
+  headers: {
+    'Content-Type': 'application/json',
+       'Accept': 'application/json'
+  }
+}
+  .then(res => res.json())
+  .then(json => console.log(json))
+  .catch(err => console.log(err))
   event.preventDefault()
   this.setState({
     term:'',
@@ -56,7 +65,7 @@ render () {
       <form onSubmit={this.onSubmit}>
         <TextField
       value={this.state.term} onChange={this.onChange}
-      hintText="Item 1"
+      hintText="Try"
       floatingLabelText="Add to your list here"
       floatingLabelFixed={true}
     />

@@ -14,6 +14,5 @@ const Page = () => (
   </MuiThemeProvider>
 );
 
-
 ReactDOM.render(<Page />, document.getElementById('root'));
 registerServiceWorker();
